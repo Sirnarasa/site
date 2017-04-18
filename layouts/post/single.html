@@ -1,0 +1,30 @@
+{{ partial "head" . }}
+
+<article>
+  <header class="ibiza ubuntu">
+    <div class="mw9 center pa4 pt5-ns ph7-l">
+      <time class="f3 mb2 dib ttu tracked"><small>{{ .Date.Format "2 Jan, 2006" }}</small></time>
+      <h3 class=" display-3 measure-narrow lh-title mv0">
+        <span class="bg-black lh-copy white pa1 tracked-tight">
+          {{.Title}}
+        </span>
+      </h3>
+      <h5 class="f3 fw1 georgia i">Read in {{ .ReadingTime }} minutes</h5>
+      <h5 class="f6 ttu tracked black-80">Oleh: Oka bRionZ</h5>
+    </div>
+  </header>
+    {{ partial "nav" . }}
+    <div class="container mt-2">
+      <p class="f5 f3-ns lh-copy measure georgia">
+        {{ .Description }}
+      </p>
+      {{ if .Params.image }}<img class="img-fluid" src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+    </div>
+  <div class="container">
+    <p class="lead">
+    {{ .Content }}
+  </p>
+  </div>
+</article>
+{{ partial "blog" . }}
+{{ partial "footer" . }}

@@ -1,0 +1,17 @@
+{{ partial "head" . }}
+
+{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latests stories") }}
+
+{{ partial "nav" . }}
+
+<div class="mw6 center">
+  <ul class="flex-ns flex-wrap mhn1-ns pa3">
+      {{ range .Data.Pages }}
+          <div class="mw7 center avenir">
+            {{ .Render "li"}}
+          </div>
+      {{ end }}
+  </ul>
+</div>
+
+{{ partial "footer" . }}

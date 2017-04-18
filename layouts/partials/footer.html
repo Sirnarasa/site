@@ -1,0 +1,72 @@
+<section class=" deep-space white ph3 pv4">
+
+	<div class="mw6 center pt2">
+			<img src="/img/logo.svg" alt="Sirnarasa" class="navbar-brand center img-fluid mb-3">
+
+		<div class="measure-narrow center mb5">
+
+			<p class="f3 lh-title text-center text-info b tc mb2">Langganan Berita</p>
+			<p class="text-center">Dapatkan berita mengagumkan dari kami di inbox Anda setiap dua minggu. Jadilah yang pertama untuk membaca.</p>
+
+			{{ partial "newsletter-form" . }}
+
+		</div>
+
+
+		<div class="flex-ns justify-between">
+
+			<div>
+				<h3 class="f4 b lh-title mb1 primary">Sirnarasa</h3>
+				<ul class="mb3">
+					<li><a href="https://www.sirnarasa.org" class="link">Home</a></li>
+					<li><a href="/products" class="link">Our products</a></li>
+					<li><a href="/values" class="link">About</a></li>
+					<li><a href="/post" class="link">Blog</a></li>
+					<li><a href="/contact" class="link">Contact</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="f4 b lh-title mb1 primary">Pendidikan</h3>
+				<ul class="mb3">
+					<li><a href="/post/jamaica-blue/" class="link">MTs Sirnarasa</a></li>
+					<li><a href="/contact" class="link">MA Sirnarasa</a></li>
+					<li><a href="https://www.stidsirnarasa.ac.id" class="link">STID Sirnarasa</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 class="f4 b lh-title mb1 primary">Baitul Maal</h3>
+				<ul class="mb3">
+					<li><a href="/post/jamaica-blue/" class="link">Zakat Maal</a></li>
+					<li><a href="/contact" class="link">Donasi</a></li>
+				</ul>
+			</div>
+			<div>
+		<h3 class="f4 b lh-title mb1 primary">Sosmed</h3>
+		<ul class="mhn2">
+			{{ partial "social-icon" (dict "link" "https://www.facebook.com/yayasansirnarasacisirri" "svg" "facebook") }}
+			{{ partial "social-icon" (dict "link" "https://twitter.com/sirnarasa" "svg" "twitter") }}
+		</ul>
+	</div>
+
+		</div>
+	</div>
+
+</section>
+<footer class="pv4 ph3 ph5-m ph6-l mid-gray">
+  <small class="f6 db tc">© 2017 <b class="ttu"><a href="https://www.sirnarasa.org"> Yayasan Sirnarasa</a></b>, All Rights Reserved</small>
+  <div class="tc mt1">
+    
+  </div>
+</footer>
+{{ partial "svg" . }}
+
+<script src="/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
